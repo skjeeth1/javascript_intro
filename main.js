@@ -1,13 +1,26 @@
 function CompChoice() {
+
+    let choice = '';
     let num = Math.floor(Math.random() * 3);
-    if (num === 0) return "rock";
-    else if (num === 1) return "paper";
-    else return "scissors";
+
+    switch (num) {
+        case 0: {
+            choice = "rock";
+            break;
+        }
+        case 1: {
+            choice = "paper";
+            break;
+        }
+        default: choice = "scissors";
+    }
+
+    const container = document.querySelector("#compchoice");
+    container.textContent = choice;
+    
+    return choice;
 }
 
-function HumanChoice() {
-    return prompt("Enter choice (rock, paper or scissors): ");
-}
 
 function GamePlay(human, comp) {
     if (human === "rock") {
@@ -32,4 +45,10 @@ function GamePlay(human, comp) {
 }
 
 
-GamePlay(HumanChoice(), CompChoice());
+const buttons = document.querySelectorAll(".user button");
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        GamePlay(button.id, CompChoice());
+    })
+})
+
