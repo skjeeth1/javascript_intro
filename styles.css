@@ -1,0 +1,65 @@
+body{
+    font-family: "Roboto", sans-serif;
+    color:azure;
+    background: #191919;
+    margin: 0px;
+}
+
+header{
+    font-family: "Press Start 2P", serif;
+    background: #06014d;
+    color: rgb(228, 201, 64);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0px;
+}
+
+.heading{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.subtext{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+main div{
+    display: flex;
+    /* gap: 200px; */
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+
+.user, .comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    gap: 50px;
+}
+
+.options{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+
+button{
+    width: 160px;
+    height: 160px;
+    font-size: 80px;
+    border-radius: 10px;
+    background: #3f3f3f;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#compchoice{
+    cursor: auto;
+}
+

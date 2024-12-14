@@ -9,28 +9,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">   
     <script src="main.js" defer></script>
 </head>
 <body>
-    <main>
+    <header>
         <div class="heading">
             ROCK, PAPER, SCISSORS!
         </div>
         <div class="subtext">
             By skjeeth1
         </div>
-        <div class="gamesketch">
+    </header>
+
+    <main>
+        <div>
+            <!-- <div class="status">help</div> -->
             <div class="user">
-                User
-                <button id="rock">&#129704;</button>
-                <button id="paper">&#128240;</button>
-                <button id="scissors">✂️</button>
+                Choose your fight:
+                <div class="options">
+                    <button id="rock">&#129704;</button>
+                    <button id="paper">&#128240;</button>
+                    <button id="scissors">✂️</button>
+                </div>
             </div>
             <div class="comp">
-                Comp
-                <div id="compchoice">&#63;</div>
+                Computer Played:
+                <div class="options"><button id="compchoice">❔</button></div>
             </div>
         </div>
+
+        <div id="score"></div>
     </main>
 </body>
 </html>
